@@ -1,7 +1,7 @@
 # TALPRO UNIVERSE — CONTEXT SYNC
 
 > Auto-generated every 6 hours. Do not edit manually.
-> Last synced: 2026-03-15T08:08:14.588396Z
+> Last synced: 2026-03-15T12:00:02.876391Z
 
 ---
 
@@ -14,26 +14,26 @@
 | competitorx | PRE-LAUNCH | 1 files |
 | elovia | PRE-LAUNCH | 1 files |
 | hci-intel | PHASE 1 PENDING | 1 files |
-| hcitalks | PRE-LAUNCH | 1 files |
-| jharokha | PRIMARY ACTIVE PROJECT | 1 files |
+| hcitalks | PRE-LAUNCH | 2 files |
+| jharokha | PRIMARY ACTIVE PROJECT | 2 files |
 | leadhunter | ACTIVE BUILD (Revenue-Critical) | 1 files |
-| talpro-india | Unknown | 1 files |
+| talpro-india | Unknown | 2 files |
 | tara-cco | BLUEPRINT COMPLETE | 1 files |
 
 ## PM2 Processes
 
 | Name | Status | Memory | Uptime |
 |------|--------|--------|--------|
-| competeiq-web | online | 82MB | 10h |
-| hireiq-pro | online | 146MB | 10h |
-| 929-digital | online | 100MB | 10h |
-| hci-intel | online | 118MB | 10h |
-| hci-intel-worker | online | 100MB | 10h |
-| competeiq-api | online | 108MB | 10h |
-| talpro-mcp | online | 83MB | 0h |
-| hci-talks | online | 201MB | 10h |
-| hci-talks | online | 278MB | 10h |
-| talpro-india | online | 127MB | 10h |
+| competeiq-web | online | 83MB | 13h |
+| hireiq-pro | online | 146MB | 13h |
+| 929-digital | online | 100MB | 13h |
+| hci-intel | online | 118MB | 13h |
+| hci-intel-worker | online | 100MB | 13h |
+| competeiq-api | online | 108MB | 13h |
+| talpro-mcp | online | 90MB | 4h |
+| hci-talks | online | 213MB | 13h |
+| hci-talks | online | 286MB | 13h |
+| talpro-india | online | 128MB | 13h |
 
 ---
 *Synced by cron context-sync — zero cost*
