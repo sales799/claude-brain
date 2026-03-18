@@ -1,7 +1,7 @@
 # TALPRO UNIVERSE — CONTEXT SYNC
 
 > Auto-generated every 6 hours. Do not edit manually.
-> Last synced: 2026-03-18T12:00:04.109948Z
+> Last synced: 2026-03-18T18:00:03.335089Z
 
 ---
 
@@ -28,16 +28,16 @@
 
 | Name | Status | Memory | Uptime |
 |------|--------|--------|--------|
-| competeiq-web | online | 91MB | 85h |
-| hireiq-pro | online | 175MB | 0h |
-| 929-digital | online | 102MB | 85h |
-| hci-intel | online | 119MB | 27h |
-| hci-intel-worker | online | 101MB | 27h |
-| competeiq-api | online | 107MB | 85h |
-| talpro-mcp | online | 97MB | 76h |
-| talpro-india | online | 128MB | 85h |
-| hci-talks | online | 396MB | 8h |
-| sourceiq | online | 157MB | 0h |
+| competeiq-web | online | 91MB | 91h |
+| hireiq-pro | online | 178MB | 0h |
+| 929-digital | online | 102MB | 91h |
+| hci-intel | online | 119MB | 33h |
+| hci-intel-worker | online | 101MB | 33h |
+| competeiq-api | online | 108MB | 91h |
+| talpro-mcp | online | 97MB | 82h |
+| talpro-india | online | 132MB | 91h |
+| hci-talks | online | 421MB | 14h |
+| sourceiq | online | 167MB | 6h |
 
 ---
 *Synced by cron context-sync — zero cost*
