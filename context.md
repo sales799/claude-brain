@@ -1,7 +1,7 @@
 # TALPRO UNIVERSE — CONTEXT SYNC
 
 > Auto-generated every 6 hours. Do not edit manually.
-> Last synced: 2026-04-12T03:39:44.664011Z
+> Last synced: 2026-04-12T09:05:53.852573Z
 
 ---
 
@@ -21,13 +21,22 @@
 
 ### Latest Saved State
 - **Project:** talpro-mcp-server
-- **Phase:** Session Continuity Module
-- **Next Action:** Verify all 4 tools work end-to-end, then update boot sequence
-- **Saved:** 2026-04-12T03:12:58.935Z
+- **Phase:** COMPLETE
+- **Next Action:** Pick next task from QUEUE.md — top CTO-actionable items: SocialIQ Express→Next.js Migration, LeadHunter Web port fix, or ProveIQ post-launch features
+- **Saved:** 2026-04-12T04:30:45.691Z
 
-> **MANDATORY ON BOOT:** Call `session_load_state()` to check for saved state.
-> If state exists, resume from where the last session left off.
-> At checkpoints during work, call `session_save_state()` to persist progress.
 
 ---
+
+### RESUME PROTOCOL
+
+ACTIVATION: When CEO types Resume, execute:
+1. WebFetch https://mcp.hcitalks.com/api/resume for full briefing
+2. Call session_load_state() via MCP
+3. Call project_context(project) for the project
+4. Display pending tasks, next action, files, blockers
+5. Execute. Do NOT re-plan completed work.
+
+NO ACCOUNT DEPENDENCY. Works from any Claude account with Talpro MCP.
+
 *Synced by cron context-sync — zero cost*
