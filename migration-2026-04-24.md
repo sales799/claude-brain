@@ -51,10 +51,22 @@ The API key is in the server's `.env` — don't commit it here. Retrieve it via:
 
 | Item | Status | Action |
 |------|--------|--------|
-| MCP connector re-add in claude.ai | Manual — UI only | Paste the 4 values above into claude.ai settings |
-| talpro-assets case-collision | Not fixed | Move `~/Code/talpro-assets` to the same case-sensitive DMG, or re-clone it inside `/Volumes/claude-brain-cs/` |
+| MCP connector re-add | ✅ Done via CLI | `claude mcp add --transport http talpro-mcp ...` — handshake green, v1.2.0 |
+| talpro-assets case-collision | ✅ Done | Re-cloned into `/Volumes/claude-brain-cs/talpro-assets`, symlinked to `~/Code/talpro-assets`. Git tree clean, all 10 collided files present |
 | Tailscale CLI | Optional | `brew install --cask tailscale` if needed |
 | OpenRouter API key rotation | Deferred | Founder decision — key is currently active |
+
+## talpro-assets fix — commands used
+
+```
+rm -rf ~/Code/talpro-assets
+cd /Volumes/claude-brain-cs && gh repo clone sales799/talpro-assets
+ln -sfn /Volumes/claude-brain-cs/talpro-assets ~/Code/talpro-assets
+```
+
+Verification: `ls claude-brain/claude-mem/` now shows both `Context.ts` and `context.ts`
+(and the 4 other pairs) side-by-side. Previously git marked these as phantom-modified
+because the case-insensitive filesystem only kept one of each pair in the working tree.
 
 ## Fleet reference
 
