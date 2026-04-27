@@ -1,0 +1,48 @@
+// Tailscale ACL policy for Talpro tailnet
+// Apply via: https://login.tailscale.com/admin/acls
+// Paste contents into the editor, click Save.
+//
+// Design:
+// - Admins (autogroup:admin) reach everything — that's you
+// - Future teammates tagged :client can only reach web ports on tagged infra
+// - Tailscale SSH restricted to admins
+//
+// After applying this policy, tag the VPS (talpro-vps) with tag:infra:
+//   Admin Console → Machines → talpro-vps → Edit tags → add tag:infra
+//   Same for: talpros-mac-mini, bhaskars-macbook-air-1, bhaskars-macbook-pro, leeyanshs-imac
+
+{
+  "tagOwners": {
+    "tag:infra":  ["autogroup:admin"],
+    "tag:client": ["autogroup:admin"]
+  },
+
+  "acls": [
+    // Admins (you) reach everything on every port
+    {
+      "action": "accept",
+      "src":    ["autogroup:admin"],
+      "dst":    ["*:*"]
+    },
+
+    // Future read-only team members: web ports on infra only
+    {
+      "action": "accept",
+      "src":    ["tag:client"],
+      "dst":    ["tag:infra:80,443"]
+    }
+  ],
+
+  "ssh": [
+    // Admins may SSH into any infra machine as root or any nonroot user
+    {
+      "action": "accept",
+      "src":    ["autogroup:admin"],
+      "dst":    ["tag:infra"],
+      "users":  ["root", "autogroup:nonroot"]
+    }
+  ],
+
+  // Explicit: reject any source that isn't matched above (defense in depth)
+  "nodeAttrs": []
+}
